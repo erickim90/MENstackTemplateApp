@@ -1,0 +1,14 @@
+{
+  "app": {
+    "routes": [
+      {"url": "/",      "file": "./routes/index"},
+      {"url": "/users", "file": "./app/users/users"}
+    ],
+    "redirects": [],
+    "timezone": "America/Los_Angeles",
+    "timeformat" : "dddd, MMMM Do YYYY, h:mm:ss a"
+  },
+  "mongo": {
+    "url": "mongodb://127.0.0.1/templateapp"
+  }
+}
