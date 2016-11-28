@@ -21,7 +21,10 @@ body{
 .navbar-header > .navbar-brand:hover{  color: #c8d2ea;  }
 .float-right            {   float:right;}
 
-.bpl-logo   {  width:250px; }
+.bpl-logo{
+    width:250px;
+    padding-top: 10%;
+}
 .bpl-title  {  color:#FFFFFF; }
 .menu-cloud {  background-color: #c8d2ea;  }
 

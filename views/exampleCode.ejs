@@ -1,7 +1,99 @@
 <div class="container">
     <div class="well well-sm">
+        <div>
+            <h4>Constructor function for a Calendar application</h4>
+            <p>Written in a MEEN stack application, native javascript without the lovely Moment.js library.</p>
+            <button id="btn1" class="btn btn-primary">Show Code</button>
+            <div id="code1" class="dont-show">
+                <script async src="//jsfiddle.net/ufpy2zko/1/embed/js,html,result/"></script>
+            </div>
+        </div>
+        <div>
+            <h4>Replicating the jQuery Source Code</h4>
+            <p>Following jQuerys excellent coding patterns and concepts with prototypes and constructors.</p>
+            <button id="btn2" class="btn btn-primary">Show Code</button>
+            <div id="code2" class="dont-show">
+                <script src="//repl.it/embed/E9Ak/7.js"></script>
+            </div>
+        </div>
+        <div>
+            <h4>Replication the Node.js HTTP Create syntax</h4>
+            <p>Replicate Node.JS syntax for creating a server to better understand First Class Functions and Callbacks,
+                not to mention a first look into the event loop and emitters</p>
+            <button id="btn3" class="btn btn-primary">Show Code</button>
+            <div id="code3" class="dont-show">
+                <script src="//repl.it/embed/E9EH/0.js"></script>
+            </div>
+        </div>
+        <div>
+            <h4>A script loading tool</h4>
+            <p>A tool I use often to inject jquery and other code into projects that may not have the necessary scripts</p>
+            <button id="btn4" class="btn btn-primary">Show Code</button>
+            <div id="code4" class="dont-show">
+                <script src="//repl.it/embed/E9BD/0.js"></script>
+            </div>
+        </div>
+        <div>
+            <h4>Advance Javascript: Closures and IIFEs</h4>
+            <p>Use closures to build multiple functions that pass the 'i' variable in an IIFE to the 'j' variable.
+                When executed at the the end when fs is invoked, the variable 'i' at the time the of execution
+                would already have incremented to 5, a common trap. Storing the value of 'i; into 'j' in a new execution context
+            allows that value to persist in memory at the time of its creation thanks to closures!</p>
+            <button id="btn5" class="btn btn-primary">Show Code</button>
+            <div id="code5" class="dont-show">
+                <script src="//repl.it/embed/E9ER/2.js"></script>
+            </div>
+        </div>
+        <div>
+            <h4>Advance Javascript: Self and this</h4>
+            <p>Properties can be added to a function because its an object
+                executable code is stored in the 'code' context of the execution context.
+                Variables are stored in another spot in memory which is retained even
+                after the execution context is removed from the execution stack (Closures)</p>
+            <button id="btn6" class="btn btn-primary">Show Code</button>
+            <div id="code6" class="dont-show">
+                <script src="//repl.it/embed/E9Dp/1.js"></script>
+            </div>
+        </div>
+        <div>
+            <h4>Advance Javascript: Arrays and this</h4>
+            <p>Arrays are identical to objects in that they are key value pairs and have 'this' however,
+                <ul>
+                    <li>Arrays Array.prototype with array specific methods</li>
+                    <li>Arrays have a length property that is very handy</li>
+                    <li>Arrays name propertys are numbers</li>
+                </ul>
+                Use 'this' to murtate the values inside the array (that's inside an object) without polluting the global namespace</p>
+            <button id="btn7" class="btn btn-primary">Show Code</button>
+            <div id="code7" class="dont-show">
+                <script src="//repl.it/embed/E9Du/0.js"></script>
+            </div>
+        </div>
 
     </div>
 </div>
 
 <%- include('sharedJS'); %>
+<script>
+    $( document ).ready(function() {
+        var btnArr  = [$('#btn1'),$('#btn2'),$('#btn3'),$('#btn4'),$('#btn5'),$('#btn6'),$('#btn7')];
+        var codeArr = [$('#code1'),$('#code2'),$('#code3'),$('#code4'),$('#code5'),$('#code6'),$('#code7')];
+
+        btnArr.forEach(function(btn,index){
+            var i = index++;
+            btn.on('click',function(){
+                if(codeArr[i].hasClass('dont-show')){
+                    codeArr[i].removeClass('dont-show');
+                    btn.html('Hide Code')
+                }
+                else{
+                    codeArr[i].addClass('dont-show');
+                    btn.html('Show Code')
+                }
+            })
+        });
+
+
+
+    });
+</script>
