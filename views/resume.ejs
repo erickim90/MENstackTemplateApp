@@ -1,19 +1,30 @@
 <div class="container">
-    <div class="jumbotron">
-        <h1><%= title %></h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in,
-            egestas eget quam. Fusce dapibus, tellus ac cursus commodo,
-            tortor mauris condimentum nibh,
-            ut fermentum massa justo sit amet risus.</p>
+    <div class="well well-sm">
+        <div>
+            <h2 class="inline-block"><%= title %></h2>
+            <div id="loadingDiv" class="inline-block">
+                <i class="fa fa-spinner fa-spin fa-3x fa-fw "></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <p><%= updated %></p>
     </div>
 
 
-    <div class="row">
+
+    <div id="resume-canvas" class="row dont-show">
         <div class="col-xs-12">
-            <canvas id="the-canvas" style="border:1px solid black;"/>
-
+            <canvas id="resume-page-1" class="border-black"/>
         </div>
-
+        <div class="col-xs-12">
+            <canvas id="resume-page-2" class="border-black"/>
+        </div>
     </div>
 
 </div>
+
+<%- include('sharedJS'); %>
+
+<script src="javascripts/resume/pdf.js"></script>
+<script src="javascripts/resume/resume.js"></script>

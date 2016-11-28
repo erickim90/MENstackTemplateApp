@@ -12,8 +12,7 @@ var pageData = {};
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     pageData.title = "Resume";
-    pageData.layout = "navLayout";
-
+    pageData.updated = "Updated November 17th 2016";
     res.render('resume', pageData);
 });
 

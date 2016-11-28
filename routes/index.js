@@ -5,22 +5,20 @@ var pageData = {};
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  pageData.title = "Main Page";
-  pageData.layout = "navLayout";
-
+  pageData.title = "Login";
   res.render('index', pageData);
 });
 
-router.get('/login', function(req, res) {
-  pageData.title = "Login";
-  pageData.layout = "navLayout";
+router.post('/login', function(req, res) {
+  console.log(req.body);
+  res.render('main', pageData);
+});
 
-  res.render('login', pageData);
+router.get('/main', function(req, res) {
+  res.render('main', pageData);
 });
 
 router.get('/logout', function(req, res) {
-  pageData.title = "Logout";
-  pageData.layout = "layout";
   res.render('login', pageData);
 });
 

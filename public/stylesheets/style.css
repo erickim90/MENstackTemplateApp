@@ -1,2 +1,31 @@
-/*Bootstrap Navbar Requirement*/
-body { padding-top: 70px; }
+body{
+    padding-top: 70px; /*Bootstrap Navbar Requirement*/
+    background-color: #222222;
+}
+/*GLOBAL CSS*/
+.inline-block   {  display: inline-block;  }
+.text-center    {  text-align: center;}
+.border-black   {  border: 1px solid black;}
+.dont-show      {  display:none;    } /*Alternative to Bootstraps !important classes */
+.overflow-x     {    overflow-x: scroll;}
+
+/*BOOTSTRAP Override*/
+@media (min-width: 1200px){
+    .container {width: 970px;}
+}
+.navbar-inverted        {  background-color: #212121;  }
+.navbar-inverted a      {  color: #c8d2ea;  }
+.navbar-inverted a:hover{  color: #212121;  }
+.well-sm                {   padding-left: 30px; }
+.navbar-header > .navbar-brand:hover{  color: #c8d2ea;  }
+.float-right            {   float:right;}
+
+.bpl-logo   {  width:250px; }
+.bpl-title  {  color:#FFFFFF; }
+.menu-cloud {  background-color: #c8d2ea;  }
+
+.fancy-border {
+    border-bottom: 4px solid;
+    border-image: url("../images/border.jpg") 1 stretch repeat;
+}
+

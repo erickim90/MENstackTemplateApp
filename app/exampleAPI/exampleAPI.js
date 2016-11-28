@@ -9,8 +9,6 @@ var pageData = {};
 /* GET users listing. */
 router.get('/', function(req, res, next) {
     pageData.title = "Example API";
-    pageData.layout = "navLayout";
-
     res.render('exampleAPI', pageData);
 });
 
