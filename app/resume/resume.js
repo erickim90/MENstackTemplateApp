@@ -9,7 +9,6 @@ var router = express.Router();
 
 var pageData = {};
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
     pageData.title = "Resume";
     pageData.updated = "Updated November 17th 2016";

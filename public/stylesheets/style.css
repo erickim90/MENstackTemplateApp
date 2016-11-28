@@ -7,7 +7,8 @@ body{
 .text-center    {  text-align: center;}
 .border-black   {  border: 1px solid black;}
 .dont-show      {  display:none;    } /*Alternative to Bootstraps !important classes */
-.overflow-x     {    overflow-x: scroll;}
+.overflow-x     {  overflow-x: scroll;}
+.color-white    {  color: white;}
 
 /*BOOTSTRAP Override*/
 @media (min-width: 1200px){
@@ -29,3 +30,11 @@ body{
     border-image: url("../images/border.jpg") 1 stretch repeat;
 }
 
+.message-bubble {  padding: 10px 0px 10px 0px;  }
+.message-bubble:nth-child(even) { background-color: #F5F5F5; }
+.message-bubble {  padding-left: 10px;  }
+.panel-body { padding: 0; }
+.panel-heading {
+    background-color: #3d6da7 !important;
+    color: white !important;
+}

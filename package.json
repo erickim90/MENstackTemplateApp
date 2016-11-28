@@ -12,11 +12,14 @@
     "ejs": "~2.5.2",
     "express": "~4.14.0",
     "express-ejs-layouts": "^2.2.0",
+    "express-session": "^1.14.2",
     "moment-timezone": "^0.5.9",
     "mongoose": "^4.7.0",
     "morgan": "~1.7.0",
     "nconf": "^0.8.4",
     "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "serve-favicon": "~2.3.0"
   }
 }

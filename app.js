@@ -24,7 +24,7 @@ mongoose.connection
     .on('error', function(err) {
         console.log("The Date and Time in " + timezone +" is " + moment().format(nconf.get('app').timeformat));
         console.error('Failed to connect to Mongo:', mongoConfig.url);
-      throw err;
+        throw err;
     })
     .on('open', function() {
         console.log("The Date and Time in " + timezone +" is " + moment().format(nconf.get('app').timeformat));
