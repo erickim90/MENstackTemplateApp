@@ -2,10 +2,9 @@
   "app": {
     "routes": [
       {"url": "/",      "file": "./routes/index"},
+      {"url": "/v1/api", "file": "./routes/api"},
       {"url": "/exampleCode", "file": "./app/exampleCode/exampleCode"},
-      {"url": "/exampleAPI", "file": "./app/exampleAPI/exampleAPI"},
-      {"url": "/about", "file": "./app/about/about"},
-      {"url": "/resume", "file": "./app/resume/resume"}
+      {"url": "/exampleAPI", "file": "./app/exampleAPI/exampleAPI"}
     ],
     "redirects": [],
     "timezone": "America/Los_Angeles",

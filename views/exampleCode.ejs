@@ -1,5 +1,11 @@
 <div class="container">
     <div class="well well-sm">
+        <h1>Test Code 1</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="well well-sm">
         <div>
             <h4>Constructor function for a Calendar application</h4>
             <p>Written in a MEEN stack application, native javascript without the lovely Moment.js library.</p>
@@ -76,6 +82,20 @@
 <%- include('sharedJS'); %>
 <script>
     $( document ).ready(function() {
+
+        $.get('/v1/api/test',{
+        })
+                .done(function(data) {
+                    console.log( data.ItemLookupResponse.Items[0].Item[0].CustomerReviews[0].IFrameURL[0] );
+                })
+                .fail(function() {
+                    console.log( "error" );
+                })
+                .always(function() {
+                    console.log( "complete" );
+                });
+
+
         var btnArr  = [$('#btn1'),$('#btn2'),$('#btn3'),$('#btn4'),$('#btn5'),$('#btn6'),$('#btn7')];
         var codeArr = [$('#code1'),$('#code2'),$('#code3'),$('#code4'),$('#code5'),$('#code6'),$('#code7')];
 
@@ -92,8 +112,6 @@
                 }
             })
         });
-
-
 
     });
 </script>
