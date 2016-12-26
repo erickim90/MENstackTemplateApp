@@ -22,6 +22,9 @@ router.get('/test', function(req, res) {
                 res.send(result);
             });
         }
+        else{
+            res.json({response:body, status: response.statusCode})
+        }
     });
 });
 
