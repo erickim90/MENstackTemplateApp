@@ -83,18 +83,17 @@
 <script>
     $( document ).ready(function() {
 
-        $.get('/v1/api/test',{
-        })
-                .done(function(data) {
-                    console.log(data)
-//                    console.log( data.ItemLookupResponse.Items[0].Item[0].CustomerReviews[0].IFrameURL[0] );
-                })
-                .fail(function() {
-                    console.log( "error" );
-                })
-                .always(function() {
-                    console.log( "complete" );
-                });
+      $.get('/v1/api/case/test',{
+      })
+      .done(function(data) {
+        console.log(data)
+      })
+      .fail(function() {
+        console.log( "error" );
+      })
+      .always(function() {
+        console.log( "complete" );
+      });
 
 
         var btnArr  = [$('#btn1'),$('#btn2'),$('#btn3'),$('#btn4'),$('#btn5'),$('#btn6'),$('#btn7')];

@@ -4,6 +4,7 @@ var router = express.Router();
 var pageData = {};
 
 router.get('/', function(req, res) {
+  pageData.fruit = ['apples','oranges','berries'];
   res.render('main', pageData);
 });
 

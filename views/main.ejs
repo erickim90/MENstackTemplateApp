@@ -1,10 +1,18 @@
 <div class="container">
 
-    <div class="well well-sm">
-        <h2>TestBOX</h2>
-
+  <div class="well well-sm">
+    <h2>Case</h2>
+    <ul>
+      <% for(var i=0; i < fruit.length; i++) { %>
+        <li>
+          <div data-fruit='<%= fruit[i] %>'>
+            <%= fruit[i] %>
+          </div>
+        </li>
+        <% } %>
+      </ul>
     </div>
 
-</div>
+  </div>
 
 <%- include('sharedJS'); %>

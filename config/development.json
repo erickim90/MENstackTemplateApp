@@ -2,9 +2,9 @@
   "app": {
     "routes": [
       {"url": "/",      "file": "./routes/index"},
-      {"url": "/v1/api", "file": "./routes/api"},
-      {"url": "/exampleCode", "file": "./app/exampleCode/exampleCode"},
-      {"url": "/exampleAPI", "file": "./app/exampleAPI/exampleAPI"}
+      {"url": "/v1/api/case", "file": "./routes/case"},
+      {"url": "/dataInput", "file": "./app/dataInput/dataInput"},
+      {"url": "/dataViewer", "file": "./app/dataViewer/dataViewer"}
     ],
     "redirects": [],
     "timezone": "America/Los_Angeles",

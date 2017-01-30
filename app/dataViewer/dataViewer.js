@@ -7,8 +7,8 @@ var router = express.Router();
 var pageData = {};
 
 router.get('/', function(req, res, next) {
-  pageData.title = "Example Code";
-  res.render('exampleCode', pageData);
+  pageData.title = "Example API";
+  res.render('dataViewer', pageData);
 });
 
 module.exports = router;

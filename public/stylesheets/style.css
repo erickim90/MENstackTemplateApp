@@ -1,24 +1,20 @@
 body{
-    padding-top: 70px; /*Bootstrap Navbar Requirement*/
+    padding-top:      70px; /*Bootstrap Navbar Requirement*/
     background-color: #222222;
-    font-family: 'Roboto', sans-serif;
+    font-family:      'Roboto', sans-serif;
 }
 /*GLOBAL CSS*/
-.dont-show      {  display:none;    } /*Alternative to Bootstraps !important classes */
-.color-white    {  color: white;}
+.dont-show      {  display:none;  } /*Alternative to Bootstrap hidden*/
+.float-right    {  float:right;   }
+.color-white    {  color: white;  }
 
 /*BOOTSTRAP Override*/
-@media (min-width: 1200px){
-    .container {width: 970px;}
-}
 .navbar-inverted        {  background-color: #212121;  }
 .navbar-inverted a      {  color: #c8d2ea;  }
 .navbar-inverted a:hover{  color: #212121;  }
-.well-sm                {   padding-left: 30px; }
-.navbar-header > .navbar-brand:hover{  color: #c8d2ea;  }
-.float-right            {   float:right;}
-
-.menu-cloud {  background-color: #c8d2ea;  }
+a.navbar-brand:hover    {  color: #c8d2ea;  }
+.well-sm                {  padding-left: 30px;  }
+.menu-cloud             {  background-color: #c8d2ea;  }
 
 .fancy-border {
     border-bottom: 4px solid;
